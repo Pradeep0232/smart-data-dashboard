@@ -16,8 +16,9 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
+  const API_URL = import.meta.env.VITE_API_URL;
   useEffect(() => {
-    fetch("http://localhost:8000/stats")
+    fetch(`${API_URL}/stats`)
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {
