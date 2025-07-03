@@ -1,56 +1,55 @@
 
-# 🚀 Smart Data Dashboard
+# Smart Data Dashboard 👨‍💻📊
 
-A full-stack data dashboard built using **React.js**, **FastAPI**, and **PySpark**, designed to analyze and visualize user behavior and performance metrics in real-time from a CSV dataset.
-
----
-
-## 🧠 Features
-
-- 📊 Displays key user insights:
-  - Total Users
-  - Active Users
-  - Total Revenue
-  - Average Session Time
-- 📈 Interactive bar chart visualization using Recharts
-- ⚡ FastAPI backend with PySpark to process big data efficiently
-- 🌐 CORS-enabled communication between frontend and backend
-- 🔄 Responsive, clean, and modern UI
+This is a simple full-stack dashboard I built to show useful user stats from a CSV file.  
+It reads data using **PySpark**, processes it with a **FastAPI** backend, and shows everything in a clean **React.js** frontend.
 
 ---
 
-## 🛠️ Tech Stack
+## What's Inside
 
-| Frontend  | Backend   | Data Processing |
-|-----------|-----------|-----------------|
-| React.js  | FastAPI   | PySpark         |
-| Vite      | Uvicorn   | CSV Input       |
-| Recharts  | CORS      |                 |
+- ✅ Total users
+- ✅ Active users (in the last 3 days)
+- ✅ Total revenue
+- ✅ Average session time (in minutes & seconds)
+- ✅ Bar chart to make things visual
 
 ---
 
-## 🧪 How to Run the Project Locally
+## Tech I Used 🧰
 
-### 🔧 1. Clone the Repo
+- **Frontend:** React.js, Vite, Recharts
+- **Backend:** FastAPI
+- **Data:** PySpark (reads and processes the CSV)
+- **API:** REST API with CORS support
+
+---
+
+## How to Run This Project Locally 🏃‍♂️
+
+### 1. Clone the Repo
 
 ```bash
 git clone https://github.com/pradeep0232/smart-data-dashboard.git
 cd smart-data-dashboard
 ```
 
-### 🚀 2. Run Backend
+### 2. Start the Backend
 
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate  # For Windows
+venv\Scripts\activate   # For Windows
 pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-> Make sure your CSV file is placed in: `backend/data/user_data.csv`
+Make sure your CSV file is in:
+```
+backend/data/user_data.csv
+```
 
-### 💻 3. Run Frontend
+### 3. Start the Frontend
 
 ```bash
 cd ../frontend
@@ -58,16 +57,29 @@ npm install
 npm run dev
 ```
 
-> Access the app at: [http://localhost:5173](http://localhost:5173)
+Then go to: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 📷 Screenshot
+## Screenshot 🖼️
 
-![Smart Data Dashboard Preview](dashboard-preview.png.png)
+![Dashboard Preview](dashboard-preview.png)
 
 ---
 
-## 📬 Contact
+## What This Project Shows
 
-Built with ❤️ by [Pradeep Kumar](https://github.com/pradeep0232)
+> That I understand how to connect a React frontend with a FastAPI backend and process data using PySpark.  
+> I know how to work with APIs, display data visually, and keep things clean and responsive.
+
+---
+
+## Resume Description 📝
+
+**Smart Data Dashboard** — Built a full-stack dashboard using React, FastAPI, and PySpark to analyze and display user metrics from CSV data. Integrated REST APIs, data filtering, and chart visualization with a clean and responsive UI.
+
+---
+
+## Contact
+
+Made with ❤️ by [Pradeep Kumar](https://github.com/pradeep0232)
